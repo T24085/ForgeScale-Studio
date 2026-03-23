@@ -1487,6 +1487,16 @@ h1 {
   color: #d2c6ab;
 }
 
+.site-footer p {
+  margin: 0;
+}
+
+.site-credit {
+  margin-top: 0.28rem !important;
+  font-size: 0.95rem;
+  color: #bcae90;
+}
+
 .site-footer a {
   color: var(--gold-soft);
 }
