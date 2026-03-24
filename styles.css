@@ -76,6 +76,21 @@ body::after {
   --line: #6b5f82;
 }
 
+.quote-page {
+  --bg-night: #f3f6fb;
+  --bg-char: #dbe5f2;
+  --ink: #152437;
+  --ink-muted: #53677d;
+  --gold: #c47a2c;
+  --gold-soft: #9c5f1d;
+  --ember: #d68632;
+  --line: rgba(53, 83, 115, 0.28);
+  --panel: #ffffff;
+  --panel-soft: #edf3fb;
+  --shadow: 0 26px 60px rgba(20, 39, 60, 0.14);
+  --shadow-soft: 0 14px 30px rgba(20, 39, 60, 0.1);
+}
+
 .commission-page::after {
   background:
     linear-gradient(180deg, rgba(10, 8, 18, 0.5), rgba(10, 8, 18, 0.82)),
@@ -91,6 +106,22 @@ body::after {
     radial-gradient(circle at 22% 18%, rgba(255, 184, 77, 0.14), transparent 26%),
     radial-gradient(circle at 82% 24%, rgba(63, 132, 255, 0.18), transparent 30%);
   filter: saturate(1.02) contrast(1.03) blur(2px);
+}
+
+.quote-page::before {
+  background:
+    radial-gradient(circle at 12% 12%, rgba(45, 108, 171, 0.14), transparent 28%),
+    radial-gradient(circle at 88% 18%, rgba(215, 145, 58, 0.12), transparent 24%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.22));
+}
+
+.quote-page::after {
+  background:
+    linear-gradient(180deg, rgba(243, 246, 251, 0.86), rgba(231, 238, 248, 0.94)),
+    radial-gradient(circle at 16% 14%, rgba(46, 94, 150, 0.14), transparent 28%),
+    radial-gradient(circle at 84% 20%, rgba(205, 139, 54, 0.12), transparent 22%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.55), rgba(225, 233, 245, 0.22));
+  filter: none;
 }
 
 .page-bg-video {
@@ -120,6 +151,16 @@ body::after {
   mask-image: radial-gradient(circle at center, black 50%, transparent 95%);
 }
 
+.quote-page .bg-grid {
+  opacity: 0.36;
+  background-image:
+    linear-gradient(rgba(42, 78, 115, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(42, 78, 115, 0.06) 1px, transparent 1px),
+    radial-gradient(circle at 25% 30%, rgba(42, 112, 168, 0.12) 1px, transparent 1px),
+    radial-gradient(circle at 75% 70%, rgba(196, 122, 44, 0.1) 1px, transparent 1px);
+  mask-image: none;
+}
+
 h1,
 h2,
 h3 {
@@ -131,6 +172,29 @@ h3 {
 
 a {
   color: inherit;
+}
+
+.quote-page {
+  font-family: "Manrope", sans-serif;
+  background:
+    radial-gradient(circle at 8% 10%, rgba(59, 119, 184, 0.1), transparent 24%),
+    radial-gradient(circle at 88% 9%, rgba(212, 144, 65, 0.12), transparent 24%),
+    linear-gradient(180deg, #f7f9fc 0%, #edf3fa 54%, #e8eef7 100%);
+}
+
+.quote-page h1,
+.quote-page h2,
+.quote-page h3,
+.quote-page .brand-text,
+.quote-page .contact-tag,
+.quote-page .quote-pill,
+.quote-page .price-tag {
+  font-family: "Fraunces", serif;
+}
+
+.quote-page .brand-text {
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
 }
 
 .site-header,
@@ -171,6 +235,18 @@ a {
   background:
     linear-gradient(90deg, rgba(17, 12, 36, 0.92), rgba(24, 17, 46, 0.9));
   box-shadow: 0 0 0 1px rgba(255, 184, 77, 0.11) inset;
+}
+
+.quote-page .site-header {
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.92), rgba(245, 249, 253, 0.9));
+  box-shadow:
+    0 14px 32px rgba(22, 40, 63, 0.1),
+    0 0 0 1px rgba(255, 255, 255, 0.68) inset;
+}
+
+.quote-page .site-header::before {
+  border-color: rgba(51, 79, 108, 0.08);
 }
 
 .site-header::before {
@@ -215,6 +291,15 @@ a {
   font-size: 0.96rem;
   color: var(--ink-muted);
   transition: color 180ms ease, transform 180ms ease;
+}
+
+.quote-page .main-nav a {
+  color: var(--ink-muted);
+}
+
+.quote-page .main-nav a:hover,
+.quote-page .main-nav a:focus-visible {
+  color: #17314d;
 }
 
 .main-nav a::after {
@@ -342,6 +427,29 @@ a {
   transition: transform 280ms ease, box-shadow 280ms ease, border-color 280ms ease;
 }
 
+.quote-page .hero-copy-block,
+.quote-page .featured-card,
+.quote-page .service-card,
+.quote-page .finish-card,
+.quote-page .contact-card,
+.quote-page .stream-panel,
+.quote-page .timeline article,
+.quote-page .commission-form,
+.quote-page .level-card,
+.quote-page .fit-card,
+.quote-page .faq-card,
+.quote-page .signal-card,
+.quote-page .hero-logo-panel,
+.quote-page .hero-metrics article,
+.quote-page .stream-frame {
+  border-color: rgba(52, 81, 114, 0.16);
+  background:
+    radial-gradient(circle at top left, rgba(52, 111, 170, 0.08), transparent 42%),
+    radial-gradient(circle at bottom right, rgba(212, 145, 61, 0.08), transparent 34%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(246, 249, 253, 0.98));
+  box-shadow: var(--shadow);
+}
+
 .hero-copy-block::before {
   content: "";
   position: absolute;
@@ -349,6 +457,21 @@ a {
   border-radius: calc(var(--radius) - 2px);
   border: 1px solid rgba(255, 226, 155, 0.08);
   pointer-events: none;
+}
+
+.quote-page .hero-copy-block::before,
+.quote-page .featured-card::before,
+.quote-page .service-card::before,
+.quote-page .finish-card::before,
+.quote-page .timeline article::before,
+.quote-page .contact-card::before,
+.quote-page .commission-form::before,
+.quote-page .level-card::before,
+.quote-page .fit-card::before,
+.quote-page .faq-card::before,
+.quote-page .signal-card::before,
+.quote-page .hero-logo-panel::before {
+  border-color: rgba(52, 81, 114, 0.08);
 }
 
 .hero-copy-block::after,
@@ -379,6 +502,27 @@ a {
   transition: opacity 260ms ease;
 }
 
+.quote-page .hero-copy-block::after,
+.quote-page .featured-card::after,
+.quote-page .service-card::after,
+.quote-page .finish-card::after,
+.quote-page .stream-frame::after,
+.quote-page .stream-panel::after,
+.quote-page .hero-logo-panel::after,
+.quote-page .gallery-item::before,
+.quote-page .timeline article::after,
+.quote-page .contact-card::after,
+.quote-page .hero-metrics article::after,
+.quote-page .commission-form::after,
+.quote-page .level-card::after,
+.quote-page .fit-card::after,
+.quote-page .faq-card::after,
+.quote-page .signal-card::after {
+  background:
+    radial-gradient(circle at var(--spot-x) var(--spot-y), rgba(52, 111, 170, 0.12), transparent 24%),
+    linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.3) 45%, transparent 62%);
+}
+
 .eyebrow {
   margin: 0 0 0.8rem;
   font-size: 0.75rem;
@@ -392,6 +536,56 @@ a {
   color: #dfc79b;
   font-size: 1.05rem;
   letter-spacing: 0.03em;
+}
+
+.quote-page .hero-kicker,
+.quote-page .hero-copy,
+.quote-page .section-intro,
+.quote-page .service-card p,
+.quote-page .service-card li,
+.quote-page .finish-card li,
+.quote-page .timeline p,
+.quote-page .stream-panel p,
+.quote-page .stream-panel li,
+.quote-page .contact p,
+.quote-page .note,
+.quote-page .level-card p,
+.quote-page .fit-card p,
+.quote-page .faq-card p,
+.quote-page .signal-card p,
+.quote-page .level-card li,
+.quote-page .signal-card li,
+.quote-page .hero-ledger p,
+.quote-page .hero-metrics p,
+.quote-page .viewer-meta,
+.quote-page .pricing-note,
+.quote-page .product-pricing p + p {
+  color: #5c6d7d;
+}
+
+.quote-page h1,
+.quote-page .featured-card h2,
+.quote-page .section-head h2 {
+  color: #13263c;
+}
+
+.quote-page .eyebrow,
+.quote-page .hero-ledger span,
+.quote-page .hero-metrics h2,
+.quote-page .service-card h3,
+.quote-page .finish-card h3,
+.quote-page .timeline h3,
+.quote-page .stream-panel h3,
+.quote-page .contact h2,
+.quote-page .level-card h3,
+.quote-page .fit-card h3,
+.quote-page .faq-card h3,
+.quote-page .signal-card h3 {
+  color: #8a5316;
+}
+
+.quote-page .section-head h2::after {
+  background: linear-gradient(90deg, rgba(32, 76, 117, 0.82), transparent);
 }
 
 h1 {
@@ -417,6 +611,11 @@ h1 {
   animation: artifactFloat 8s ease-in-out infinite;
   min-height: 100%;
   transition: transform 320ms ease, box-shadow 320ms ease, border-color 320ms ease;
+}
+
+.quote-page .hero-photo {
+  border-color: rgba(52, 81, 114, 0.18);
+  animation: none;
 }
 
 .hero-photo::after {
@@ -448,6 +647,97 @@ h1 {
   font-size: 1rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+}
+
+.quote-dashboard {
+  padding: 1.5rem;
+  display: flex;
+  align-items: stretch;
+  min-height: 100%;
+  background:
+    linear-gradient(180deg, rgba(249, 251, 254, 0.96), rgba(239, 245, 252, 0.98));
+}
+
+.quote-dashboard::after {
+  background:
+    linear-gradient(180deg, transparent 18%, rgba(23, 49, 77, 0.06)),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.18), transparent 45%, rgba(32, 76, 117, 0.06));
+}
+
+.quote-dashboard-screen {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 24px;
+  background:
+    linear-gradient(155deg, rgba(17, 35, 55, 0.96), rgba(30, 63, 95, 0.94) 58%, rgba(193, 128, 51, 0.9));
+  color: #f2f6fb;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1),
+    0 26px 42px rgba(19, 40, 63, 0.2);
+}
+
+.quote-dashboard-screen h2 {
+  margin-bottom: 0;
+  color: #f8fbff;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  max-width: 10ch;
+}
+
+.quote-pill {
+  margin: 0;
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 0.42rem 0.78rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #f9fbfd;
+  font-size: 0.85rem;
+}
+
+.quote-estimate-card {
+  padding: 1rem 1.1rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.quote-estimate-card span,
+.quote-dashboard-list span {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(240, 246, 252, 0.72);
+}
+
+.quote-estimate-card strong {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 1.35rem;
+}
+
+.quote-dashboard-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.quote-dashboard-list li {
+  padding: 0.95rem 1rem;
+  border-radius: 18px;
+  background: rgba(9, 20, 33, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.quote-dashboard-list strong {
+  display: block;
+  margin-top: 0.28rem;
+  font-size: 1rem;
 }
 
 .hero-actions {
@@ -485,6 +775,11 @@ h1 {
   box-shadow: 0 0 0 0 rgba(255, 184, 77, 0.26);
 }
 
+.quote-page .btn-primary {
+  color: #fff;
+  background: linear-gradient(135deg, #204c75, #2f6ea6 54%, #4e88bc 100%);
+}
+
 .btn::after {
   content: "";
   position: absolute;
@@ -500,6 +795,11 @@ h1 {
   filter: brightness(1.04);
 }
 
+.quote-page .btn-primary:hover,
+.quote-page .btn-primary:focus-visible {
+  box-shadow: 0 0 0 7px rgba(47, 110, 166, 0.16);
+}
+
 .btn:hover::after,
 .btn:focus-visible::after {
   transform: translateX(130%) skewX(-18deg);
@@ -509,6 +809,12 @@ h1 {
   border: 1px solid rgba(255, 226, 155, 0.25);
   color: var(--ink);
   background: rgba(255, 255, 255, 0.02);
+}
+
+.quote-page .btn-ghost {
+  border-color: rgba(52, 81, 114, 0.18);
+  background: rgba(240, 245, 251, 0.74);
+  color: #17314d;
 }
 
 .hero-ledger {
@@ -1418,6 +1724,14 @@ h1 {
   transition: border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
 }
 
+.quote-page .form-field input,
+.quote-page .form-field select,
+.quote-page .form-field textarea {
+  color: #18314c;
+  background: rgba(240, 245, 251, 0.82);
+  border-color: rgba(52, 81, 114, 0.16);
+}
+
 .form-field select {
   appearance: none;
 }
@@ -1427,9 +1741,19 @@ h1 {
   resize: vertical;
 }
 
+.quote-page .form-field input[type="file"] {
+  padding: 0.7rem 0.8rem;
+  cursor: pointer;
+}
+
 .form-field input::placeholder,
 .form-field textarea::placeholder {
   color: #9e8fae;
+}
+
+.quote-page .form-field input::placeholder,
+.quote-page .form-field textarea::placeholder {
+  color: #7c8ea2;
 }
 
 .form-field input:focus,
@@ -1439,6 +1763,14 @@ h1 {
   border-color: rgba(255, 184, 77, 0.66);
   box-shadow: 0 0 0 4px rgba(255, 184, 77, 0.12);
   background: rgba(16, 12, 28, 0.9);
+}
+
+.quote-page .form-field input:focus,
+.quote-page .form-field select:focus,
+.quote-page .form-field textarea:focus {
+  border-color: rgba(47, 110, 166, 0.56);
+  box-shadow: 0 0 0 4px rgba(47, 110, 166, 0.12);
+  background: rgba(255, 255, 255, 0.98);
 }
 
 .form-actions {
@@ -1455,6 +1787,106 @@ h1 {
   color: var(--gold-soft);
 }
 
+.quote-page .form-status {
+  color: #204c75;
+}
+
+.file-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  min-height: 3rem;
+  padding: 0.9rem;
+  border-radius: 16px;
+  border: 1px dashed rgba(52, 81, 114, 0.2);
+  background: rgba(240, 245, 251, 0.58);
+}
+
+.file-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(23, 49, 77, 0.08);
+  color: #17314d;
+  font-size: 0.94rem;
+}
+
+.file-chip strong {
+  font-size: 0.8rem;
+  color: #6a7f94;
+}
+
+.empty-files {
+  margin: 0;
+  color: #71859a;
+}
+
+.quote-disclaimer {
+  margin: 1rem 0 0;
+  color: #64778b;
+  font-size: 0.95rem;
+}
+
+.quote-summary-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.quote-summary-stack {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.quote-summary-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: baseline;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(52, 81, 114, 0.1);
+}
+
+.quote-summary-row span {
+  color: #6a7d92;
+  font-size: 0.95rem;
+}
+
+.quote-summary-row strong {
+  color: #15304a;
+  font-size: 1.02rem;
+  text-align: right;
+}
+
+.quote-summary-note {
+  margin: 0;
+}
+
+.quote-page .product-pricing {
+  border-color: rgba(52, 81, 114, 0.14);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.88), rgba(236, 243, 250, 0.94)),
+    rgba(255, 255, 255, 0.88);
+  box-shadow: 0 14px 28px rgba(20, 39, 60, 0.08);
+}
+
+.quote-page .price-tag {
+  color: #16304a;
+  background:
+    linear-gradient(90deg, rgba(47, 110, 166, 0.12), rgba(196, 122, 44, 0.12)),
+    rgba(255, 255, 255, 0.82);
+  box-shadow:
+    0 8px 18px rgba(20, 39, 60, 0.08),
+    0 0 0 1px rgba(52, 81, 114, 0.08) inset;
+}
+
+.quote-page .price-tag::before {
+  color: #33506c;
+  background: rgba(47, 110, 166, 0.08);
+}
+
 .contact-list {
   margin: 0;
   padding-left: 1rem;
@@ -1464,6 +1896,10 @@ h1 {
 
 .signal-card .btn {
   margin-top: 1.2rem;
+}
+
+.capability-grid {
+  align-items: stretch;
 }
 
 .small-note {
@@ -1487,6 +1923,12 @@ h1 {
   color: #d2c6ab;
 }
 
+.quote-page .site-footer {
+  background: rgba(255, 255, 255, 0.84);
+  border-color: rgba(52, 81, 114, 0.16);
+  color: #506478;
+}
+
 .site-footer p {
   margin: 0;
 }
@@ -1499,6 +1941,10 @@ h1 {
 
 .site-footer a {
   color: var(--gold-soft);
+}
+
+.quote-page .site-footer a {
+  color: #17314d;
 }
 
 .reveal {
@@ -1635,6 +2081,10 @@ h1 {
   .gallery-item.wide {
     grid-column: span 1;
   }
+
+  .quote-dashboard-screen {
+    min-height: 420px;
+  }
 }
 
 @media (max-width: 760px) {
@@ -1663,6 +2113,12 @@ h1 {
     padding: 0.42rem 0.8rem;
   }
 
+  .quote-page .menu-toggle {
+    color: #17314d;
+    border-color: rgba(52, 81, 114, 0.22);
+    background: rgba(255, 255, 255, 0.7);
+  }
+
   .main-nav {
     width: 100%;
     display: none;
@@ -1687,6 +2143,20 @@ h1 {
   .featured-card,
   .viewer-card {
     padding: 1.3rem;
+  }
+
+  .quote-dashboard,
+  .quote-dashboard-screen {
+    padding: 1.2rem;
+  }
+
+  .quote-summary-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .quote-summary-row strong {
+    text-align: left;
   }
 
   .hero-ledger {

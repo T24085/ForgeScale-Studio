@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ForgeScale STL Quote Desk | Instant 3D Print Estimates</title>
+  <meta
+    name="description"
+    content="Professional STL print quoting for ForgeScale Studio with instant estimates, material options, production timelines, and final review requests."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="quote-page">
+  <div class="bg-grid" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <a class="brand" href="stl-quote.html">
+      <img class="brand-logo" src="Logo.png" alt="ForgeScale Studio logo" />
+      <span class="brand-text">ForgeScale STL Quote Desk</span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav id="main-nav" class="main-nav" aria-label="Primary">
+      <a href="#estimate">Instant Estimate</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#faq">FAQ</a>
+      <a href="index.html">ForgeScale Studio</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section reveal">
+      <div class="hero-layout">
+        <div class="hero-copy-block">
+          <p class="eyebrow">Professional STL quoting</p>
+          <p class="hero-kicker">Instant print estimates for prototypes, production parts, display models, and tabletop pieces</p>
+          <h1>Upload your STL details and get a fast print estimate.</h1>
+          <p class="hero-copy">
+            This quoting site is built for customers who need a clean, business-ready starting estimate before final file review.
+            Use it to upload STL files, measure the actual mesh geometry in-browser, and build a fair starting estimate for PLA prints on an Ender 3 V3 Pro.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#estimate">Start the Estimate</a>
+            <a class="btn btn-ghost" href="index.html">Visit ForgeScale Studio</a>
+          </div>
+          <div class="hero-ledger">
+            <div>
+              <span>Built For</span>
+              <p>Functional parts, prototypes, display models, miniatures, fixtures, short-run production, and client approvals.</p>
+            </div>
+            <div>
+              <span>Quote Logic</span>
+              <p>Pricing updates from actual STL bounds, mesh volume, quantity, material profile, finish level, and requested speed.</p>
+            </div>
+          </div>
+        </div>
+        <aside class="hero-photo quote-dashboard" aria-label="Quote dashboard preview">
+          <div class="quote-dashboard-screen">
+            <p class="quote-pill">Live Estimate</p>
+            <h2>Transparent production inputs</h2>
+            <div class="quote-estimate-card">
+              <span>Typical turnaround</span>
+              <strong>3 to 7 business days</strong>
+            </div>
+            <ul class="quote-dashboard-list">
+              <li>
+              <span>Material</span>
+              <strong>PLA on Ender 3 V3 Pro</strong>
+              </li>
+              <li>
+                <span>File review</span>
+                <strong>STL bounds, volume, and triangle count captured in-browser</strong>
+              </li>
+              <li>
+                <span>Finish options</span>
+                <strong>Raw, support cleanup, sanded, primed, painted</strong>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+      <div class="hero-metrics" role="list" aria-label="Quote desk highlights">
+        <article role="listitem">
+          <h2>Instant</h2>
+          <p>live estimate updates as inputs change</p>
+        </article>
+        <article role="listitem">
+          <h2>5</h2>
+          <p>material paths for different print requirements</p>
+        </article>
+        <article role="listitem">
+          <h2>1 Review</h2>
+          <p>final quote confirmed after manual file check</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="featured-strip section reveal" aria-label="Service positioning">
+      <article class="featured-card">
+        <p class="eyebrow">Why this site exists</p>
+        <h2>A cleaner intake flow for STL-based print jobs.</h2>
+        <p>
+          The main ForgeScale Studio site is still the brand hub. This page is the dedicated quote desk for customers who want a fast production estimate and a structured handoff for STL work.
+        </p>
+      </article>
+      <article class="signal-card">
+        <p class="eyebrow">Good fit</p>
+        <ul class="contact-list">
+          <li>Customers pricing one-off prototype or replacement parts</li>
+          <li>Agencies or creators requesting display models and presentation pieces</li>
+          <li>Tabletop buyers who need custom STL files printed to spec</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="estimate" class="section reveal">
+      <div class="section-head">
+        <p class="eyebrow">Estimate Desk</p>
+        <h2>Instant STL quote builder</h2>
+        <p class="section-intro">
+          Add the project details below for a quick estimate. This quote now reads the uploaded STL geometry directly in your browser. Final pricing can still move if supports, orientation, splitting, or repair work are unusually heavy.
+        </p>
+      </div>
+      <div class="quote-layout">
+        <form class="commission-form" data-quote-form data-recipient="christoffersent@gmail.com">
+          <div class="form-grid">
+            <label class="form-field">
+              <span>Name</span>
+              <input type="text" name="name" data-label="Name" autocomplete="name" required />
+            </label>
+            <label class="form-field">
+              <span>Email</span>
+              <input type="email" name="email" data-label="Email" autocomplete="email" required />
+            </label>
+            <label class="form-field">
+              <span>Company / Client</span>
+              <input type="text" name="company" data-label="Company / Client" autocomplete="organization" placeholder="Optional" />
+            </label>
+            <label class="form-field">
+              <span>Scale (%)</span>
+              <input type="number" name="scalePercent" data-label="Scale (%)" min="25" max="400" value="100" required />
+            </label>
+            <label class="form-field">
+              <span>Material</span>
+              <select name="material" data-label="Material" required>
+                <option value="pla" selected>PLA</option>
+              </select>
+            </label>
+            <label class="form-field">
+              <span>Print Quality</span>
+              <select name="quality" data-label="Print Quality" required>
+                <option value="">Select one</option>
+                <option value="draft">Draft</option>
+                <option value="standard">Standard</option>
+                <option value="fine">Fine detail</option>
+                <option value="presentation">Presentation finish</option>
+              </select>
+            </label>
+            <label class="form-field">
+              <span>Quantity</span>
+              <input type="number" name="quantity" data-label="Quantity" min="1" max="250" value="1" required />
+            </label>
+            <label class="form-field">
+              <span>Infill / Build Style</span>
+              <select name="buildStyle" data-label="Infill / Build Style" required>
+                <option value="">Select one</option>
+                <option value="basic">Basic everyday print</option>
+                <option value="balanced">Balanced strength</option>
+                <option value="strong">Higher strength</option>
+                <option value="solid">Nearly solid</option>
+              </select>
+            </label>
+            <label class="form-field">
+              <span>Finish Level</span>
+              <select name="finish" data-label="Finish Level" required>
+                <option value="">Select one</option>
+                <option value="raw">Raw print only</option>
+                <option value="cleanup">Support removal + cleanup</option>
+                <option value="sanded">Sanded / surface prep</option>
+                <option value="primed">Primed for paint</option>
+                <option value="painted">Painted display finish</option>
+              </select>
+            </label>
+            <label class="form-field">
+              <span>Turnaround</span>
+              <select name="turnaround" data-label="Turnaround" required>
+                <option value="">Select one</option>
+                <option value="standard">Standard schedule</option>
+                <option value="priority">Priority queue</option>
+                <option value="rush">Rush production</option>
+              </select>
+            </label>
+            <label class="form-field full">
+              <span>STL Files</span>
+              <input type="file" name="files" id="quote-files" accept=".stl" multiple required />
+            </label>
+            <div class="form-field full">
+              <span>Detected Files</span>
+              <div class="file-chip-list" id="file-chip-list">
+                <p class="empty-files">No STL files selected yet.</p>
+              </div>
+            </div>
+            <label class="form-field full">
+              <span>Project Notes</span>
+              <textarea
+                name="notes"
+                data-label="Project Notes"
+                placeholder="Describe tolerances, intended use, target finish, color requests, assembly needs, or anything that affects the quote."
+                required
+              ></textarea>
+            </label>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Request Final Quote Review</button>
+            <p class="form-status" aria-live="polite"></p>
+          </div>
+          <p class="quote-disclaimer">
+            File uploads stay in your browser on this page. When the email draft opens, attach the STL files manually so ForgeScale Studio can review the actual geometry.
+          </p>
+        </form>
+
+        <aside class="signal-card quote-summary-card">
+          <p class="contact-tag">Live summary</p>
+          <div class="quote-summary-stack">
+            <div class="quote-summary-row">
+              <span>Estimated range</span>
+              <strong id="quote-price-range">$42 - $56</strong>
+            </div>
+            <div class="quote-summary-row">
+              <span>Estimated lead time</span>
+              <strong id="quote-lead-time">3 to 5 business days</strong>
+            </div>
+            <div class="quote-summary-row">
+              <span>Model footprint</span>
+              <strong id="quote-model-metrics">Upload STL files</strong>
+            </div>
+            <div class="quote-summary-row">
+              <span>Estimated material</span>
+              <strong id="quote-material-usage">Waiting for STL analysis</strong>
+            </div>
+          </div>
+          <div class="product-pricing quote-summary-note">
+            <p class="price-tag" id="quote-material-note">STL-based planning estimate</p>
+            <p id="quote-breakdown">
+              Upload STL files to calculate actual mesh volume and bounding size before the pricing summary is generated.
+            </p>
+          </div>
+          <a class="btn btn-ghost" href="index.html#contact">Open ForgeScale Contact Page</a>
+        </aside>
+      </div>
+    </section>
+
+    <section id="capabilities" class="section reveal">
+      <div class="section-head">
+        <p class="eyebrow">Capabilities</p>
+        <h2>Built for business-ready quoting</h2>
+      </div>
+      <div class="cards-grid capability-grid">
+        <article class="service-card">
+          <h3>Professional intake</h3>
+          <p>Customers can send a structured request instead of an unformatted message, which reduces quoting back-and-forth.</p>
+        </article>
+        <article class="service-card">
+          <h3>PLA-focused estimates</h3>
+          <p>The quote is now tuned specifically for PLA production on your Ender 3 V3 Pro instead of trying to price multiple machine or material types.</p>
+        </article>
+        <article class="service-card">
+          <h3>Fast prequalification</h3>
+          <p>Good jobs are easier to identify early by part type, finish expectations, deadline, and size range before final review.</p>
+        </article>
+        <article class="service-card">
+          <h3>Clear handoff to ForgeScale</h3>
+          <p>The site points back to ForgeScale Studio for brand trust, broader services, and full custom printing conversations.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="workflow" class="section reveal">
+      <div class="section-head">
+        <p class="eyebrow">Workflow</p>
+        <h2>How quote requests move forward</h2>
+      </div>
+      <div class="timeline">
+        <article>
+          <span>01</span>
+          <h3>Scope the request</h3>
+          <p>Upload the STL files, choose scale, quantity, material, and finish level, then let the site read the geometry for the initial estimate.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Send for review</h3>
+          <p>Open the email draft and attach the STL files so ForgeScale Studio can inspect geometry, supports, and manufacturability.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Confirm production path</h3>
+          <p>The final quote is adjusted if the files require unusual orientation, reinforcement, splitting, or post-processing.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>Approve and print</h3>
+          <p>Once the estimate is approved, production can move into scheduling, print execution, finishing, and delivery.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="faq" class="section reveal">
+      <div class="section-head">
+        <p class="eyebrow">FAQ</p>
+        <h2>Common quote questions</h2>
+      </div>
+      <div class="cards-grid faq-grid">
+        <article class="faq-card">
+          <h3>Is the instant estimate final?</h3>
+          <p>No. It is a planning range. Final pricing is confirmed after reviewing the actual STL geometry and support strategy.</p>
+        </article>
+        <article class="faq-card">
+          <h3>Can customers upload multiple STL files?</h3>
+          <p>Yes. This page reads multiple filenames and sizes locally in the browser, then the final email asks the customer to attach those files manually.</p>
+        </article>
+        <article class="faq-card">
+          <h3>Does it work for tabletop and business parts?</h3>
+          <p>Yes. The quote logic supports miniature, display, functional, prototype, and batch-part scenarios.</p>
+        </article>
+        <article class="faq-card">
+          <h3>Where do customers go after this page?</h3>
+          <p>The quote desk links directly back to the main ForgeScale Studio site for broader services, brand context, and additional custom work.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <p>ForgeScale STL Quote Desk • Structured estimates for custom 3D printing projects.</p>
+      <p class="site-credit"><a href="index.html">Return to ForgeScale Studio</a></p>
+    </div>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
